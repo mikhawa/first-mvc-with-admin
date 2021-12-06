@@ -19,22 +19,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav">
-                    <?php
-                    // var_dump($recupSection);
-                    foreach ($recupSection as $section) :
-                    ?>
-                        <li class="nav-item">
-                            <a class="nav-link" href="?idsection=<?= $section['idthesection'] ?>"><?= $section['thesectionTitle'] ?></a>
-                        </li>
-                    <?php
-                    endforeach;
-                    ?>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="?p=connect">Connexion</a>
-                    </li>
-                </ul>
+                <?php include "publicView/menuView.php" ?>
 
             </div>
         </div>
