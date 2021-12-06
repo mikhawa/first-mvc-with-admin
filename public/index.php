@@ -7,6 +7,14 @@ $begin = microtime(true);
 
 // sleep(3); // attente de 3 secondes pour tester le chargement
 
+// création d'une session
+// ON est ICI
+
+session_start();
+
+var_dump($_SESSION);
+echo session_id();
+
 /*
  chargement des dépendances
 */
